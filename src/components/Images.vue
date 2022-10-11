@@ -104,7 +104,7 @@ export default {
 				return this.getBase64FromImage()
 			}
 
-			if (this.source) {
+			if (this.source && !this.hasPreview) {
 				return this.source
 			}
 
